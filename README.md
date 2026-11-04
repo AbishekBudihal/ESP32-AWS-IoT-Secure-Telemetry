@@ -16,6 +16,8 @@ An enterprise-ready embedded IoT client built on ESP32 that securely transmits t
                                                         | MQTT Test Client /  |
                                                         | DynamoDB / Shadow   |
                                                         +---------------------+
+
+
 ---
 ## Key Features
 ### TLS 1.2 Authentication: Mutual X.509 certificate authentication securing hardware-to-cloud communications.
@@ -34,3 +36,17 @@ An enterprise-ready embedded IoT client built on ESP32 that securely transmits t
 ├── .gitignore
 └── README.md
 ---
+## Setup & Flashing
+### Prerequisites
+
+#### Arduino IDE or PlatformIO
+#### AWS IoT Core Thing, Certificates, and Policy configured
+
+### Steps
+#### 1. Clone the repository:
+git clone [https://github.com/AbishekBudihal/ESP32-AWS-IoT-Secure-Telemetry.git](https://github.com/AbishekBudihal/ESP32-AWS-IoT-Secure-Telemetry.git)
+
+#### Rename src/secrets_template.h to src/secrets.h.
+#### Populate secrets.h with your AWS Endpoint, Amazon Root CA1, Device Certificate, and Private Key.
+#### Build and flash to your ESP32 board.
+
